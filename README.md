@@ -19,3 +19,16 @@ This directory serves as a legacy log archive for the original Livecounts.cs inf
 
 ---
 *Final Update v1.4.2 (April 22, 2026)*
+--
+
+### 📟 System Specifications (Legacy)
+- **Frontend:** Vanilla HTML5 / CSS3 / JavaScript (ES6).
+- **Styling:** Custom CSS with a focus on dark-mode UI and high-contrast accents.
+- **Dependencies:** - `Iconify` for vector-based glyphs.
+  - `Google Fonts` (Roboto / Ubuntu / Montserrat).
+- **Infrastructure:** Decommissioned custom CSS hooks (e.g., the infamous `header 1.css`).
+
+### 🛠️ Maintenance & Compatibility
+- **Current State:** Static / Read-Only.
+- **Responsive Design:** Mobile-optimized via manual Media Queries (as of v1.4.2).
+- **Browser Support:** Optimized for Chromium-based browsers; legacy support for older engines is not guaranteed.

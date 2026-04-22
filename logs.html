@@ -1,17 +1,88 @@
-
 <script src="iconify.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
 <link rel="icon" type="image/png" href="File.png" />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link rel="stylesheet" href="web.css" />
-<title>Livecounts.cs - Home</title>
+<title>Livecounts.cs - Logs</title>
 <link rel="stylesheet" href="header 1.css" />
+
 <style>
+    @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&display=swap');
+
     body {
         background-color: #1b1b1b;
+        margin: 0;
+        font-family: 'JetBrains Mono', monospace;
+    }
+
+    .card {
+    background: #0a0a0f !important;
+    border: 1px solid #333 !important;
+    border-radius: 12px !important;
+    width: 90% !important;
+    max-width: 800px !important; /* Limits width on desktop */
+    margin: 40px auto !important;
+    padding: 35px !important; /* More breathing room */
+    height: auto !important; /* Allows box to grow with text */
+    min-height: 400px !important; /* Optional: keeps a base size */
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5) !important;
+}
+
+    /* ========================================= */
+    /* [!] SYSTEM MIGRATION BANNER               */
+    /* ========================================= */
+    .migration-banner {
+        background: #0a0a0f;
+        border-bottom: 2px solid #ff3333;
+        padding: 12px 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 15px;
+        color: #eee;
+        font-size: 13px;
+        box-shadow: 0 4px 20px rgba(0,0,0,0.5);
+    }
+
+    .status-dot {
+        height: 8px;
+        width: 8px;
+        background-color: #ff3333;
+        border-radius: 50%;
+        display: inline-block;
+        box-shadow: 0 0 8px #ff3333;
+        animation: pulse 2s infinite;
+    }
+
+    @keyframes pulse {
+        0% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(255, 51, 51, 0.7); }
+        70% { transform: scale(1); box-shadow: 0 0 0 10px rgba(255, 51, 51, 0); }
+        100% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(255, 51, 51, 0); }
+    }
+
+    .banner-text b { color: #ff3333; }
+    
+    .banner-link {
+        color: #10b981;
+        text-decoration: underline;
+        font-weight: bold;
+        transition: 0.2s;
+    }
+
+    .banner-link:hover {
+        color: #14d394;
+        text-shadow: 0 0 8px rgba(20, 211, 148, 0.5);
     }
 </style>
+
+<div class="migration-banner">
+    <span class="status-dot"></span>
+    <span class="banner-text">
+        <b>ARCHIVE MODE:</b> This log directory is now legacy. New updates are being pushed to 
+        <a href="https://blazepixel76.github.io/BlazeWebsite/" class="banner-link">BLAZEPIXEL UPLINK</a>.
+    </span>
+</div>
 
 <nav class="navbar navbar-expand-lg justify-content-center navbar-dark">
     <div class="container">
@@ -21,7 +92,7 @@
         <div class="dropdown" style="float:right;">
             <button class="dropbtn"><div id="hahahahaahhahah"></div> &nbsp;<i style="font-size:23px;" class="fas fa-arrow-up"></i>&nbsp;</button>
             <div class="dropdown-content">
-              <a href="SubtoRHS.HTML">Secret Main Website</a> <!--??? Nothing To See Here.-->
+              <a href="SubtoRHS.HTML">Secret Main Website</a> 
             </div>
           </div>
         </a>
@@ -37,6 +108,7 @@
     </a>
     </div>
 </nav>
+
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -46,11 +118,51 @@
       <link rel="stylesheet" href="logs.css" />
     </head>
     <body>
-        <div class="card">
-        <p>July 25 2024</p>
-            <list>Improved Twitter Layout & API 
-                More Things Are Comming Soon!!!
-            </list>
+<div class="card" style="border-top: 3px solid #10b981 !important; margin-top: 40px;">
+            <p style="color: #666; font-size: 12px; margin-bottom: 5px;">April 22 2026</p>
+            <div style="font-weight: bold; margin-bottom: 10px; color: #10b981; letter-spacing: 1px;">SYSTEM UPDATE v1.4.2 (FINAL UPDATE!!!)</div>
+            <ul style="list-style: none; padding: 0; color: #eee; font-size: 14px; line-height: 1.8;">
+                <li>• Implemented mandatory <b>End-of-Life (EOL) service </b> notices and global migration banners.</li>
+                <li>• Formally decommissioned legacy <b> Livecounts.cs </b> infrastructure protocols.</li>
+                <li>• Finalized data integrity merge for <b> @RHStatistics </b> into the <b>BlazePixel</b> ecosystem.</li>
+                
+<div style="margin-top: 20px; padding-top: 15px; border-top: 1px solid #333; color: #888; font-size: 13px; line-height: 1.6; text-align: left !important;">
+        <div style="text-align: center !important; margin-bottom: 10px;">
+            <b style="color: #bbb;">Why EOL (End Of Life)?:</b>
+        </div>
+
+        The decision to make <b>Livecounts.cs</b> legacy was not taken lightly. 
+        After years of service, the platform's architecture has become increasingly difficult to maintain and scale due to its outdated codebase and limitations. 
+        Because back then I was very new to HTML, I used basic skills to create the website, but now with the knowledge I have gained over the years, I can say that the code is very messy and hard to work with. 
+        By transitioning to <b>BlazePixel</b>, we can provide a more modern, efficient, and secure experience for our users while ensuring long-term sustainability.
+    </div> 
+    
+    <li style="margin-top: 15px; background: rgba(16, 185, 129, 0.1); padding: 12px; border-radius: 8px; border: 1px dashed #10b981; list-style: none;">
+        <b style="color: #10b981;">SYSTEM STATUS:</b> 
+        Online at <a href="https://blazepixel76.github.io/BlazeWebsite/" style="color: #fff; text-decoration: underline; font-weight: bold;">BlazePixel Uplink</a>
+    </li>
+</div>
+
+        <div class="card" style="opacity: 0.7;">
+            <p style="color: #666; font-size: 12px; margin-bottom: 5px;">July 25 2024</p>
+            <div style="font-weight: bold; margin-bottom: 10px; color: #bbb;">SYSTEM UPDATE v1.4.1</div>
+            <ul style="list-style: none; padding: 0; color: #888; font-size: 14px; line-height: 1.8;">
+                <li>• Improved Twitter Layout & API integration.</li>
+                <li>• General stability fixes for legacy architecture.</li>
+            </ul>
+        </div>
+
+        <div class="card" style="opacity: 0.5; margin-top: 30px;">
+            <p style="color: #666; font-size: 12px; margin-bottom: 5px;">Nov 11 2023</p>
+            <div style="font-weight: bold; margin-bottom: 10px; color: #888;">SYSTEM UPDATE v1.4.0</div>
+            <ul style="list-style: none; padding: 0; color: #777; font-size: 14px; line-height: 1.8;">
+                <li>• Implemented structural borders for the Primary Home Interface.</li>
+                <li>• Integrated navigation buttons for direct social media access.</li>
+                <li>• Established the centralized Update Log directory.</li>
+                <li style="font-style: italic; margin-top: 10px; font-size: 12px;">
+                    [Legacy Note: Early-stage development utilizing fundamental HTML/CSS protocols.]
+                </li>
+            </ul>
         </div>
   </body>
 </html>
